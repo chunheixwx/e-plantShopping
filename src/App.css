@@ -113,6 +113,26 @@
 .product-list-container.visible {
   top: 0;
 }
+/* Corrective landing layout: the original translate(-50%,-50%) plus fixed
+   margins pushed the hero and company copy outside the viewport. */
+.content {
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+.landing_content {
+  margin: 0;
+  transform: none;
+  flex: 0 1 400px;
+  height: auto;
+  min-height: 320px;
+}
+.aboutus_container {
+  flex: 1 1 420px;
+  max-width: 640px;
+  min-width: 0;
+}
 /* LandingPage.css */
 @media screen and (max-width: 768px) {
   .content {

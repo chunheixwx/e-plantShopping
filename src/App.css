@@ -165,3 +165,15 @@
     width: 90%; /* Adjust as needed */
   }
 }
+
+/* Stack the landing vertically on small screens instead of wrapping the
+   company copy into an off-screen second column. */
+@media screen and (max-width: 768px) {
+  .content {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .aboutus_container {
+    max-width: 100%;
+  }
+}
